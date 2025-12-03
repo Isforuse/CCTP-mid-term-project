@@ -42,7 +42,7 @@ body {
 /* --- 卡片 (Glassmorphism) --- */
 .card {
   width: 100%;
-  max-width: 760px;     /* 卡片最大寬度（避免太寬） */
+  max-width: 600px;     /* 卡片最大寬度（避免太寬） */
   margin: 0 auto;       /* 卡片置中 */
   background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(18px);
