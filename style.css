@@ -2,7 +2,8 @@
 body {
   margin: 0;
   font-family: "Noto Sans TC", sans-serif;
-  background: #0e1a2a;
+  /* background: #0e1a2a; */
+  background: #dbd826;
   transition: background 0.8s ease;
   overflow-x: hidden;
 }
