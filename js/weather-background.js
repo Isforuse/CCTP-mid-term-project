@@ -23,3 +23,14 @@ export function applyWeatherBackground(iconCode) {
     body.className = "night";
   }
 }
+
+export function applyWeatherPhoto(city, condition) {
+  const query = `${city} ${condition}`;
+
+  document.body.style.backgroundImage =
+    `url("https://source.unsplash.com/1600x900/?${query}")`;
+
+  document.body.style.backgroundSize = "cover";
+  document.body.style.backgroundPosition = "center";
+}
+

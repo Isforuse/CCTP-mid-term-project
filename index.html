@@ -10,7 +10,7 @@
   <div id="weather-effects"></div>
 
   <div class="app">
-    <h1 class="title">Vibe Weather</h1>
+    <h1 class="title">Weather Cather</h1>
     <p class="subtitle">輸入城市名稱，查詢即時天氣</p>
 
     <div class="card">
@@ -56,6 +56,29 @@
                 <span id="sunrise" class="detail-item"></span>
                 <span id="sunset" class="detail-item"></span>
             </div>
+
+            <!-- AQI 空氣品質 -->
+            <div id="aqi-card" class="details-row">
+              <span id="aqi" class="detail-item"></span>
+              <span id="pm25" class="detail-item"></span>
+              <span id="pm10" class="detail-item"></span>
+            </div>
+
+            <!-- 風向 -->
+            <div class="details-row">
+              <span id="wind-direction" class="detail-item">
+                風向：
+                <svg id="wind-arrow" width="20" height="20" viewBox="0 0 24 24">
+                  <path d="M12 2 L19 12 H5 Z" fill="#fff"></path>
+                </svg>
+              </span>
+            </div>
+
+            <!-- Chart.js 小時溫度折線圖 -->
+            <div class="chart-box">
+              <canvas id="forecastChart"></canvas>
+            </div>
+
         </div>
 
         <div id="forecast-container" class="forecast-container hidden">
@@ -66,9 +89,10 @@
     </div>
 
     <footer class="footer" style="color: white">
-      <span>Data by OpenWeather · Built with Vibe Coding</span>
+      <span>Data by OpenWeather · Built by ChatGPT5</span>
     </footer>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
   <script type="module" src="js/main.js"></script>
 </body>
