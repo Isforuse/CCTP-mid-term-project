@@ -172,3 +172,75 @@ body {
   font-size: 11px;
   color: #9ca3af;
 }
+
+.details-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  padding: 12px 14px;
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.details-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.detail-item {
+  font-size: 14px;
+  color: #e5e7eb;
+  padding: 4px 6px;
+}
+
+.forecast-container {
+  margin-top: 20px;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+}
+
+.forecast-title {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #e5e7eb;
+}
+
+.forecast-list {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+}
+
+.forecast-item {
+  min-width: 90px;
+  background: rgba(255, 255, 255, 0.10);
+  border-radius: 14px;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.forecast-time {
+  font-size: 13px;
+  margin-bottom: 6px;
+  color: #e5e7eb;
+}
+
+.forecast-temp {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 4px;
+  color: #f9fafb;
+}
+
+.forecast-desc {
+  font-size: 12px;
+  color: #d1d5db;
+  margin-top: 2px;
+}
+
