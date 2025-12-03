@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>Vibe Weather</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <h1 class="title">Vibe Weather</h1>
+    <p class="subtitle">輸入城市名稱，查詢即時天氣</p>
+    <div class="card">
+      <div class="input-group">
+        <input id="city-input" type="text" placeholder="例如：Taipei, Tokyo, Seoul">
+        <button id="search-btn">查詢天氣</button>
+      </div>
+      <p id="message" class="message"></p>
+      <div id="result" class="result hidden">
+        <div class="city-row">
+          <span id="city-name" class="city-name"></span>
+        </div>
+        <div class="main-info">
+          <span id="temp" class="temp"></span>
+          <div class="icon-block">
+            <img id="icon" class="icon" alt="">
+            <span id="description" class="description"></span>
+          </div>
+        </div>
+        <div class="extra-info">
+          <span id="humidity" class="badge"></span>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <span>Data by OpenWeather · Built with Vibe Coding</span>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
