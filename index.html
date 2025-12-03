@@ -5,7 +5,10 @@
   <title>Vibe Weather</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+  <div id="weather-effects"></div>
+
   <div class="app">
     <h1 class="title">Vibe Weather</h1>
     <p class="subtitle">輸入城市名稱，查詢即時天氣</p>
@@ -27,7 +30,7 @@
           <span id="temp" class="temp"></span>
           <div class="icon-block">
             <img id="icon" class="icon" alt="">
-            <span id="description" class="description"></span>
+            <span id="description" class="description" style="color: white"></span>
           </div>
         </div>
 
@@ -50,25 +53,17 @@
         </div>
 
         <div id="forecast-container" class="forecast-container hidden">
-          <h3 class="forecast-title">未來 12 小時預報</h3>
+          <h3 class="forecast-title" style="color: white">未來 12 小時預報</h3>
           <div id="forecast-list" class="forecast-list"></div>
         </div>
-
       </div>
     </div>
 
-    <footer class="footer">
+    <footer class="footer" style="color: white">
       <span>Data by OpenWeather · Built with Vibe Coding</span>
     </footer>
   </div>
 
-  <!-- 🌧️❄⚡ 粒子動畫容器（你忘記加的部分）-->
-  <div id="weather-effects"></div>
-
-    <script src="js/weather-api.js"></script>
-    <script src="js/weather-effects.js"></script>
-    <script src="js/weather-background.js"></script>
-    <script src="js/main.js"></script>
-
+  <script type="module" src="js/main.js"></script>
 </body>
 </html>
